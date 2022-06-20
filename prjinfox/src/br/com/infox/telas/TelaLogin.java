@@ -1,10 +1,4 @@
-<<<<<<< HEAD
-=======
-
->>>>>>> 52734018c72c2592bba192cdd7d0bbaae10d5d6b
 package br.com.infox.telas;
-import java.sql.*;
-import br.com.infox.dal.ModuloConexao;
 
 import java.sql.*;
 import br.com.infox.dal.ModuloConexao;
@@ -17,7 +11,6 @@ import javax.swing.JOptionPane;
  */
 public class TelaLogin extends javax.swing.JFrame {
 
-<<<<<<< HEAD
     Connection conexao = null;
     PreparedStatement pst = null;
     ResultSet rs = null;
@@ -88,23 +81,6 @@ public class TelaLogin extends javax.swing.JFrame {
 
         }
 
-=======
-       Connection conexao = null;
-        PreparedStatement pst=null;
-        ResultSet rs = null;
-        
-    public TelaLogin() {
-        initComponents();
-        conexao = ModuloConexao.conector();
-        if (conexao != null){
-            lblstatus.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/com/infox/icones/dbok.png")));
-            
-        } else{
-            lblstatus.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/com/infox/icones/dberror.png")));
-            
-        }    
-                     
->>>>>>> 52734018c72c2592bba192cdd7d0bbaae10d5d6b
     }
 
     @SuppressWarnings("unchecked")
@@ -115,11 +91,7 @@ public class TelaLogin extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
         txtUsuario = new javax.swing.JTextField();
         btnLogin = new javax.swing.JButton();
-<<<<<<< HEAD
         txtSenha = new javax.swing.JPasswordField();
-=======
-        jPasswordField1 = new javax.swing.JPasswordField();
->>>>>>> 52734018c72c2592bba192cdd7d0bbaae10d5d6b
         lblstatus = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -140,8 +112,6 @@ public class TelaLogin extends javax.swing.JFrame {
 
         lblstatus.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/com/infox/icones/dberror.png"))); // NOI18N
 
-        lblstatus.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/com/infox/icones/dberror.png"))); // NOI18N
-
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -150,8 +120,9 @@ public class TelaLogin extends javax.swing.JFrame {
                 .addGap(22, 22, 22)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                     .addGroup(layout.createSequentialGroup()
+                        .addGap(10, 10, 10)
                         .addComponent(lblstatus, javax.swing.GroupLayout.PREFERRED_SIZE, 151, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 60, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 50, Short.MAX_VALUE)
                         .addComponent(btnLogin))
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -176,30 +147,23 @@ public class TelaLogin extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel2)
-<<<<<<< HEAD
                     .addComponent(txtSenha, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-=======
-                    .addComponent(jPasswordField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
->>>>>>> 52734018c72c2592bba192cdd7d0bbaae10d5d6b
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(btnLogin)
                     .addComponent(lblstatus))
-                .addContainerGap(51, Short.MAX_VALUE))
+                .addContainerGap(54, Short.MAX_VALUE))
         );
 
         pack();
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-<<<<<<< HEAD
     private void btnLoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLoginActionPerformed
         //acionando o metodo logar
         logar();
     }//GEN-LAST:event_btnLoginActionPerformed
 
-=======
->>>>>>> 52734018c72c2592bba192cdd7d0bbaae10d5d6b
     public static void main(String args[]) {
 
         /* Create and display the form */
@@ -214,14 +178,8 @@ public class TelaLogin extends javax.swing.JFrame {
     private javax.swing.JButton btnLogin;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
-<<<<<<< HEAD
     private javax.swing.JLabel lblstatus;
     private javax.swing.JPasswordField txtSenha;
     private javax.swing.JTextField txtUsuario;
-=======
-    private javax.swing.JPasswordField jPasswordField1;
-    private javax.swing.JTextField jTextField1;
-    private javax.swing.JLabel lblstatus;
->>>>>>> 52734018c72c2592bba192cdd7d0bbaae10d5d6b
     // End of variables declaration//GEN-END:variables
 }
